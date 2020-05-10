@@ -135,73 +135,73 @@ for event in events:
         game.game[goal] = str(int(game.game[goal]) + 1)
 
     # Corner
-    if (event.event[event_type] == '2'):  
+    elif (event.event[event_type] == '2'):  
         game.game[corner] = str(int(game.game[corner]) + 1)
     
     # Foul
-    if (event.event[event_type] == '3'): 
+    elif (event.event[event_type] == '3'): 
         game.game[foul] = str(int(game.game[foul]) + 1)
     
     # Yellow Card
-    if (event.event[event_type] == '4'): 
+    elif (event.event[event_type] == '4'): 
         game.game[yellow_card] = str(int(game.game[yellow_card]) + 1)
     
     # Second Yellow Card
-    if (event.event[event_type] == '5'): 
+    elif (event.event[event_type] == '5'): 
         game.game[yellow_card] = str(int(game.game[yellow_card]) + 1)
         game.game[red_card] = str(int(game.game[red_card]) + 1)
     
     # Red Card
-    if (event.event[event_type] == '6'): 
+    elif (event.event[event_type] == '6'): 
         game.game[red_card] = str(int(game.game[red_card]) + 1)
     
     # Offside
-    if (event.event[event_type] == '9'): 
+    elif (event.event[event_type] == '9'): 
         game.game[offside] = str(int(game.game[offside]) + 1)
     
     # Penalty
-    if (event.event[event_type] == '11'): 
+    elif (event.event[event_type] == '11'): 
         game.game[penalty] = str(int(game.game[penalty]) + 1)
     
     # Attempt
-    if (event.event[event_type] == '1'): 
+    elif (event.event[event_type] == '1'): 
         if (event.event[location] == '1'):
             game.game[attempt_1] = str(int(game.game[attempt_1]) + 1)
-        if (event.event[location] == '2'):
+        elif (event.event[location] == '2'):
             game.game[attempt_2] = str(int(game.game[attempt_2]) + 1)
-        if (event.event[location] == '3'):
+        elif (event.event[location] == '3'):
             game.game[attempt_3] = str(int(game.game[attempt_3]) + 1)
-        if (event.event[location] == '4'):
+        elif (event.event[location] == '4'):
             game.game[attempt_4] = str(int(game.game[attempt_4]) + 1)
-        if (event.event[location] == '5'):
+        elif (event.event[location] == '5'):
             game.game[attempt_5] = str(int(game.game[attempt_5]) + 1)
-        if (event.event[location] == '6'):
+        elif (event.event[location] == '6'):
             game.game[attempt_6] = str(int(game.game[attempt_6]) + 1)
-        if (event.event[location] == '7'):
+        elif (event.event[location] == '7'):
             game.game[attempt_7] = str(int(game.game[attempt_7]) + 1)
-        if (event.event[location] == '8'):
+        elif (event.event[location] == '8'):
             game.game[attempt_8] = str(int(game.game[attempt_8]) + 1)
-        if (event.event[location] == '9'):
+        elif (event.event[location] == '9'):
             game.game[attempt_9] = str(int(game.game[attempt_9]) + 1)
-        if (event.event[location] == '10'):
+        elif (event.event[location] == '10'):
             game.game[attempt_10] = str(int(game.game[attempt_10]) + 1)
-        if (event.event[location] == '11'):
+        elif (event.event[location] == '11'):
             game.game[attempt_11] = str(int(game.game[attempt_11]) + 1)
-        if (event.event[location] == '12'):
+        elif (event.event[location] == '12'):
             game.game[attempt_12] = str(int(game.game[attempt_12]) + 1)
-        if (event.event[location] == '13'):
+        elif (event.event[location] == '13'):
             game.game[attempt_13] = str(int(game.game[attempt_13]) + 1)
-        if (event.event[location] == '14'):
+        elif (event.event[location] == '14'):
             game.game[attempt_14] = str(int(game.game[attempt_14]) + 1)
-        if (event.event[location] == '15'):
+        elif (event.event[location] == '15'):
             game.game[attempt_15] = str(int(game.game[attempt_15]) + 1)
-        if (event.event[location] == '16'):
+        elif (event.event[location] == '16'):
             game.game[attempt_16] = str(int(game.game[attempt_16]) + 1)
-        if (event.event[location] == '17'):
+        elif (event.event[location] == '17'):
             game.game[attempt_17] = str(int(game.game[attempt_17]) + 1)
-        if (event.event[location] == '18'):
+        elif (event.event[location] == '18'):
             game.game[attempt_18] = str(int(game.game[attempt_18]) + 1)
-        if (event.event[location] == '19'):
+        elif (event.event[location] == '19'):
             game.game[attempt_19] = str(int(game.game[attempt_19]) + 1)
     
 # Labels
