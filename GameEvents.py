@@ -121,7 +121,7 @@ for event in events:
             err = 'Error getting country (line ' + str(currentEventNo + 1) + ')'
             print(err)
             currentEventNo = currentEventNo + 1
-            c = "0"
+            c = "NA"
         else: c = countries[currentEventNo][1]
         g = copy.deepcopy(game)         
         g.setCountry(c)
@@ -135,7 +135,7 @@ for event in events:
         game.game[goal] = str(int(game.game[goal]) + 1)
 
     # Corner
-    elif (event.event[event_type] == '2'):  
+    if (event.event[event_type] == '2'):  
         game.game[corner] = str(int(game.game[corner]) + 1)
     
     # Foul
