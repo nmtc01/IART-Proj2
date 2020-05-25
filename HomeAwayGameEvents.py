@@ -76,9 +76,9 @@ if (len(sys.argv) != 2 and len(sys.argv) != 3) :
     print('Usage: HomeAwayGameEvents.py <InputCSVfilePath> (<OutputCSVFile>)\n')
     sys.exit()
 
-if (len(sys.argv) == 2):
+if (len(sys.argv) == 3):
     outfile = 'gameEvents[HomeAway].csv'
-elif (len(sys.argv) == 3):
+elif (len(sys.argv) == 4):
     outfile = sys.argv[2]
     
 # Game Events 
