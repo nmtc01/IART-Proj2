@@ -119,7 +119,10 @@ for event in events:
         offset = away
         if (event.event[is_goal] == '1'):
             game.away = game.away + 1
-        
+    
+    #Fastbreak
+    if (event.event[fast_break] == '1'):
+        game.game[fastbreak + offset] = game.game[fastbreak + offset] + 1
 
     # Corner
     if (event.event[event_type] == '2'):  

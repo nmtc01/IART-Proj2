@@ -133,6 +133,10 @@ for event in events:
     # Goal
     if (event.event[is_goal] == '1'):
         game.game[goal] = str(int(game.game[goal]) + 1)
+        
+    # Fastbreak
+    if (event.event[fast_break] == '1'):
+        game.game[fastbreak] = str(int(game.game[fastbreak]) + 1)
 
     # Corner
     if (event.event[event_type] == '2'):  
