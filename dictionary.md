@@ -1,4 +1,4 @@
-# Game Events - Country
+# Game Events
 
 | Column name | Description (values in one game)                     |
 | ----------- | ---------------------------------------------------- |
